@@ -1,0 +1,448 @@
+:root {
+    font-size: 62.5%;
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*=================================
+        <--Imagens de fundo-->
+  =================================*/
+
+.cachorro_fundo{
+    display: flex;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 0;
+}
+
+.cachorro_fundo::after{
+    content: '';
+    background: url(img/pet\ dog\ 1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 541px;
+    height: 647px;
+    transform: scale(0.8);
+}
+
+.cachorro_fundo::before{
+    content: '';
+    background: url(img/Group\ 11.svg);
+    position: absolute;
+    width: 400px;
+    margin-top: 16rem;
+    margin-left: 68px;
+    height: 400px;
+    background-size: cover;
+    display: inline-block;
+    transform: scale(.8);
+    background-repeat: no-repeat;
+}
+
+.gato_fundo{
+    display: block;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 0;
+}
+
+.gato_fundo::after{
+    background: url(img/pet\ cat.svg);
+    position: absolute;
+    content: '';
+    width: 428px;
+    height: 609px;
+    right: 0;
+    margin-right: 10rem;
+    transform: scale(0.8);
+    margin-top: 4rem;
+}
+
+.gato_fundo::before{
+    background: url(img/Group\ 12.svg);
+    position: absolute;
+    width: 465px;
+    height: 433px;
+    content: '';
+    margin-top:15.3rem;
+    right: 0;
+    margin-right: 7rem;
+    background-size: cover;
+}
+
+.forma img{
+    right: 0;
+    position: absolute;
+    width: 58vw;
+    z-index: -10;
+}
+
+.paw{
+    position: absolute;
+    top: 15.5rem;
+    margin-left: 49.8rem;
+}
+
+.paw2 img{
+    position: absolute;
+    margin-top: 41.4rem;
+    right: 0;
+    margin-right: 67.8rem;
+    z-index: -1;
+    width: 3.5rem;
+    transform: rotate(-70deg);
+}
+
+.paw3 img{
+    position: absolute;
+    margin-top: 86.5rem;
+    right: 0;
+    margin-right: 4.5rem;
+    z-index: -1;
+    width: 3.5rem;
+    transform: rotate(-70deg);
+}
+
+.paw4{
+    position: absolute;
+    margin-top: 79.2rem;
+    margin-left: 12rem;
+    width: 3.5rem;
+    height: 3.3rem;
+}
+
+.booking_dog{
+    background: url(img/pet\ dog\ 2\ 1.svg);
+    position: absolute;
+    left: 0;
+    margin-left:5rem;
+    width: 197px;
+    height: 220px;
+    margin-top: 8rem;
+    z-index: -1;
+}
+
+.booking_cat{
+    background: url(img/pet\ cat\ 2\ 1.svg);
+    width: 188px;
+    height: 215px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*=================================
+            <--Header-->
+  =================================*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5.6rem;
+    width: 100%;
+}
+
+.menu-logo{
+    margin-left: 12.6rem;
+}
+
+header menu ul{
+    display: flex;
+    gap: 4.5rem;
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+#home{
+    color: #193A6A;
+}
+
+header menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-usuario{
+    margin-right: 12.6rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-usuario p{
+    width: 12.8rem;
+    font-size: 1.8rem;
+}
+
+/*=================================
+            <--main-->
+  =================================*/
+
+main{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18rem;
+    flex-direction: column;
+    position: absolute;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #193A6A;
+}
+
+.titulo h1{
+    font-size: 6.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.titulo h3{
+    font-size: 1.8rem;
+}
+
+.main-button{
+    margin-top: 4.6rem;
+}
+
+.main-button button{
+    background-color: #193A6A;
+    width: 18.7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.main-button button:hover, .booking_btn input:hover{
+    cursor: pointer;
+    filter:brightness(0.7)
+}
+
+.especializacoes{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.6rem;
+}
+
+.especializacoes-container{
+    display: flex;
+    flex-direction: column;
+    width: 23.3rem;
+    align-items: center;
+    background: white;
+    font-size: 2.2rem;
+}
+
+.especializacoes-container .fundo{
+    width: 23.3rem;
+    height: 15rem;
+    border-radius: 0.8rem;
+    border: 1px lightgray solid;
+    font-display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.especializacoes-container picture.icon{
+    position: absolute;
+    margin-top: -2rem;
+    background-color: #EBF1FA;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: -3rem;
+}
+
+.especializacoes-container picture.icon:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border: 1px #193A6A solid;
+}
+
+.especializacoes-container .fundo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center ;
+}
+
+.especializacoes-container .fundo p{
+    margin-top: 20px;
+}
+
+/*=================================
+ <--Section (booking_appointment_bar)-->
+  =================================*/
+
+.booking_appointment_bar{
+    top: 84.6rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking_appointment_bar_container{
+    width: 162.2rem;
+    height: 26.8rem;
+    background:rgba(84,115,158,0.06);
+    backdrop-filter: blur(4.000px);
+    border-radius: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.selecoes_booking{
+    display: flex;
+    gap: 10.2rem;
+}
+
+#select{
+    width: 26.1rem;
+    height: 4.6rem;
+    border-radius: 5px;
+    border: 1px #32367a solid;
+    color: #D1D8E1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.booking p, .booking_input p{
+    margin-top: 3.7rem;
+    font-size: 2rem;
+    color: #193A6A;
+    margin-bottom: 2.9rem;
+}
+
+.booking_input input{
+    width: 20.1rem;
+    height: 4.6rem;
+    border-radius: 5px;
+    border: 1px #32367a solid;
+    color: #D1D8E1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.booking_btn input{
+    margin-bottom: 2.9rem;
+    width: 20.5rem;
+    height: 6rem;
+    background-color: #193A6A;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1722px){
+
+    .gato_fundo{
+        transform: scale(0.8);
+        right: 0;
+        margin-top: -4rem;
+        margin-right: -4rem;
+    }
+
+    .cachorro_fundo{
+        transform: scale(0.8);
+        margin-top: -4rem;
+        margin-left: -4rem;
+    }
+
+    .titulo h1{
+        transform: scale(0.8);
+        margin-bottom: -1rem;
+    }
+
+    .titulo h3{
+        transform: scale(0.8);
+    }
+
+    .main-button{
+        transform: scale(0.8);
+        margin-top: 2.6rem;
+    }
+
+    .especializacoes, .especializacoes-container{
+        transform: scale(0.9);
+    }
+
+    .especializacoes{
+        margin-top: 3rem;
+    }
+
+    header{
+        transform: scale(0.9);
+        width: 100%;
+    }
+
+    main{
+        margin-top: 15rem;
+    }
+
+    .menu-logo{
+        margin-left: -2rem;
+    }
+
+    .menu-usuario{
+        margin-right: -2rem;
+    }
+
+    menu, .menu-logo, .menu-usuario{
+        margin-top: -1rem;
+    }
+
+    .especializacoes{
+        gap: 0rem;
+    }
+
+    .booking_appointment_bar{
+        transform: scale(0.9);
+        margin-top: -15rem;
+    }
+}
